@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Flight Authority | GeoFS & Flight Operations</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-bottom: 1px solid #334155;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: #1e293b;
+            padding: 1rem;
+            border-bottom: 1px solid #334155;
+        }
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+        .about-card, .grid-card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .grid-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+        .grid-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Global Flight Authority</h1>
+        <p>Your Ultimate Hub for GeoFS Multi-player Events, Routing, and Community ATC</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#categories">Categories & Tools</a>
+        <a href="#discord">Join Community</a>
+    </nav>
+
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="about">
+            <h2>About GFA</h2>
+            <div class="about-card">
+                <p>Welcome to <strong>Global Flight Authority (GFA)</strong>! We are a dedicated community built for virtual aviation enthusiasts, specifically tailored for GeoFS pilots and air traffic controllers. Whether you're registering flights through our custom Discord bot, coordinating complex airspace maneuvers, or running structured group events, GFA provides the structure and tools you need for immersive multiplayer flying.</p>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>GFA Hub & Categories</h2>
+            <div class="categories-grid">
+                <div class="grid-card">
+                    <h3>✈️ Flight Registration</h3>
+                    <p>File and register your flight plans cleanly using our custom server tools before taking off from major global hubs.</p>
+                    <span class="btn">Active</span>
+                </div>
+                <div class="grid-card">
+                    <h3>🎙️ Air Traffic Control</h3>
+                    <p>Participate in structured ATC procedures or communicate intentions smoothly via radio guidelines if a controller is live.</p>
+                    <span class="btn">Live Ops</span>
+                </div>
+                <div class="grid-card">
+                    <h3>🛠️ Community Resources</h3>
+                    <p>Access community-built userscripts, pushback utilities, and radar tools designed to upgrade your simulator experience.</p>
+                    <span class="btn">Explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Callout Section -->
+        <section id="discord" style="text-align: center;">
+            <h2>Ready to Fly With Us?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">Join our community server to verify your profile, pick your airport, and jump into the skies.</p>
+            <a href="https://discord.gg" target="_blank" class="btn">Join our Discord Server</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Global Flight Authority. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
